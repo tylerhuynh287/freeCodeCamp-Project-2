@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="survey-form">
+            <header class="header">
+                <h1 id="title" class="title">Card Collection Interests Survey</h1>
+                <p id="description" class="description">A survey to see find users' card collection interests</p>
+            </header>
+            
+            <div class="form-group-1">
+                <label id="name-label" for="name">Name*</label>
+                <input type="text" name="name" id="name" class="form-group-2" placeholder="First & Last Name" required/>
+            </div>
+            
+            <div class="form-group-1">
+                <label id="email-label" for="email">Email*</label>
+                <input type="email" name="email" id="email" class="form-group-2" placeholder="user@domain.com" required/>
+            </div>  
+            
+            <div class="form-group-1">
+                <label id="number-label" for="number">Age*</label>
+                <input type="number" name="age" id="number" min="5" max="100" class="form-group-2" placeholder="select age"/>
+            </div>
+            
+            <div class="form-group-1">
+                <p>Which collectible card genre are you most interested in?</p>
+                <select id="dropdown" name="CCG" class="form-group-2" required>
+                <option disable selected value>Select Genre</option>
+                <option value="baseball">Baseball</option>
+                <option value="basketball">Basketball</option>
+                <option value="football">Football</option>
+                <option value="soccer">Soccer</option>
+                <option value="pokemon">Pokemon</option>
+                </select>
+            </div>
+            
+            <div class="form-group-1">
+                <p>Would you be interested in learning more about your selected genre?</p>
+                <label for="very-interested">
+                <input name="interest" value="very-interested" type="radio" class="radio-1"/>Very Interested
+                </label>
+                <label for="interested">
+                <input name="interest" value="interested" type="radio" class="radio-1"/>Interested
+                </label>
+                <label for="neutral">
+                <input name="interest" value="neutral" type="radio" class="radio-1"/>Neutral
+                </label>
+                <label for="uninterested">
+                <input name="interest" value="uninterested" type="radio" class="radio-1"/>Uninterested
+                </label>
+                <label for="very-uninterested">
+                <input name="interest" value="very-uninterested" type="radio" class="radio-1"/>Very Uninterested
+                </label>
+            </div>
+            
+            <div class="form-group-1">
+                <p>If you have interest in more than one genre, please select the others:</p>
+                <label for="baseball">
+                <input name="others" value="baseball" type="checkbox" class="checkbox-1"/>Baseball
+                </label>
+                <label for="basketball">
+                <input name="others" value="basketball" type="checkbox" class="checkbox-1"/>Basketball
+                </label>
+                <label for="football">
+                <input name="others" value="football" type="checkbox" class="checkbox-1"/>Football
+                </label>
+                <label for="soccer">
+                <input name="others" value="soccer" type="checkbox" class="checkbox-1"/>Soccer
+                </label>
+                <label for="pokemon">
+                <input name="others" value="pokemon" type="checkbox" class="checkbox-1"/>Pokemon
+                </label>
+            </div>
+            
+            <div class="form-group-1">
+                <p>Any other collectible card genres not included in the lists?</p>
+                <textarea id="not-included" class="text-area-1" name="not-included" placeholder="Enter any additional genres here..."></textarea>
+            </div>
+            
+            <div class="form-group-1">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+  
+     
